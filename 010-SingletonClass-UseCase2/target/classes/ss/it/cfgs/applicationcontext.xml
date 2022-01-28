@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="a_a1" class="ss.it.ston.Arithmetic_A2" scope="singleton" />
+	<bean id="a_a2" class="ss.it.ston.Arithmetic_A2" scope="singleton" />
+	<bean id="a_a3" class="ss.it.ston.Arithmetic_A2" scope="singleton" />
+	<bean id="a_a12" class="ss.it.ston.Arithmetic_A3"
+		scope="singleton" />
+	<bean id="m1" class="ss.it.ston.CacheMemory2" scope="singleton" />
+</beans>

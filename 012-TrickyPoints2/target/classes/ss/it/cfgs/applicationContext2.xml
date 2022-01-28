@@ -1,0 +1,18 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+
+	<bean id="a" class="ss.it.beans.A" />
+	<bean id="a2" class="ss.it.beans.A2" lazy-init="true" />
+	<bean id="a3" class="ss.it.beans.A3" lazy-init="true" />
+	<bean id="a4" class="ss.it.beans.A4" lazy-init="true" />
+	<bean id="a5" class="ss.it.beans.A5" lazy-init="true" />
+	<bean id="a6" class="ss.it.beans.A6" />
+	<bean id="a7" class="ss.it.beans.A7" />
+	<bean id="a8" class="ss.it.beans.A8" />
+	<bean id="a9" class="ss.it.beans.A9" />
+	<bean id="a1" class="ss.it.beans.A1" lazy-init="true" />
+</beans>

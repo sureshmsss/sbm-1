@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="st1" class="ss.it.ston.Singleton" scope="singleton" />
+
+	<bean id="st01" class="ss.it.ston.Singleton" scope="singleton" />
+	<bean id="st02" class="ss.it.ston.Singleton" scope="singleton" />
+
+
+	<bean id="st001" class="ss.it.ston.Singleton"
+		factory-method="getInstance" />
+	<bean id="st002" class="ss.it.ston.Singleton"
+		factory-method="getInstance" />
+
+
+
+</beans>
