@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="cng" class="ss.it.beans.CNG" />
+	<bean id="diesel" class="ss.it.beans.Diesel" />
+	<bean id="petrol" class="ss.it.beans.Petrol" />
+
+	<bean id="v" class="ss.it.beans.Vehicle">
+		<property name="engine" ref="diesel" />
+	</bean>
+
+
+</beans>

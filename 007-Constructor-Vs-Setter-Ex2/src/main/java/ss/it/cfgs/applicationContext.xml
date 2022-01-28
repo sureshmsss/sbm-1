@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- only constructor injection -->
+	<bean id="ret" class="ss.it.beans.Retailer">
+		<constructor-arg name="name" value="suresh" />
+		<constructor-arg name="mobile" value="9966110012" />
+		<constructor-arg name="address" value="hyd" />
+	</bean>
+
+	<!-- both constructor and setter injection -->
+	<bean id="cus" class="ss.it.beans.Customer">
+		<constructor-arg name="mobile" value="9464510012" />
+		<constructor-arg name="email" value="suresh@gmail.com" />
+		<constructor-arg name="pwd" value="suresh12345" />
+		<property name="name" value="suresh" />
+		<property name="add" value="hyd" />
+	</bean>
+	
+	<bean id="am" class="ss.it.beans.Amazon">
+		<property name="retailer" ref="ret" />
+		<property name="customer" ref="cus" />
+	</bean>
+
+</beans>
